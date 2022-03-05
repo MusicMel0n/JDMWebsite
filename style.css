@@ -40,8 +40,15 @@ a.active,a:hover{
     transition: ease-out .5s;
     padding: 0 5px;
     border-radius: 2px;
+    font-size: 18px;
 }
-section{
+section.a{
+    background: url(home_back.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    opacity: 0.85;
+}
+section.b{
     background: url(home_back.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
@@ -54,6 +61,9 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: .85;
-    font-size: 50px;
+    font-size: 2.5vw;
+    transform-style: preserve-3d;
+    perspective: 1px;
 }
+
 
