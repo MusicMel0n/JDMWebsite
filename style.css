@@ -1,12 +1,21 @@
+@font-face {
+    font-family: 'minimalisticlight';
+    src: url('fonts/minimalistic_light-webfont.woff2') format('woff2'),
+         url('fonts/minimalistic_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'minimalisticlight', Arial, sans-serif;
 }
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'minimalisticlight', Arial, sans-serif;
     cursor: pointer;
 }
 nav{
@@ -16,10 +25,11 @@ nav{
 }
 label.logo{
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    font-family: 'minimalisticlight', Arial, sans-serif;
 }
 nav ul{
     float: right;
@@ -32,24 +42,18 @@ nav ul li{
 }
 nav ul li a{
     color: grey;
-    font-size: 17px;
+    font-size: 21px;
     text-transform: uppercase;
 }
 a.active,a:hover{
     color: white;
-    transition: ease-out .5s;
+    transition: .5s;
     padding: 0 5px;
     border-radius: 2px;
-    font-size: 18px;
+    font-size: 23px;
 }
-section.a{
-    background: url(home_back.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-    opacity: 0.85;
-}
-section.b{
-    background: url(home_back.jpg) no-repeat;
+section{
+    background: url(res/home_back.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
     opacity: 0.85;
@@ -61,9 +65,5 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: .85;
-    font-size: 2.5vw;
-    transform-style: preserve-3d;
-    perspective: 1px;
+    font-size: 3.5vw;
 }
-
-
