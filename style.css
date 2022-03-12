@@ -17,6 +17,7 @@
 body{
     font-family: 'minimalisticlight', Arial, sans-serif;
     cursor: pointer;
+    background-color: rgb(36, 36, 36);
 }
 nav{
     background: #000000;
@@ -57,8 +58,9 @@ section{
     background-size: cover;
     height: calc(100vh - 80px);
     opacity: 0.85;
+    animation: FadeIn 1s;
 }
-h1{
+.h1-index{
     color: white;
     position: absolute;
     top: 50%;
@@ -66,4 +68,53 @@ h1{
     transform: translate(-50%, -50%);
     opacity: .85;
     font-size: 3.5vw;
+    animation: FadeIn 2.5s;
+}
+.h1-what{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .85;
+    font-size: 2.5vw;
+    animation: FadeIn 1s;
+}
+.p-what{
+    color:white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .85;
+    font-size: 1.7vw;
+    animation: FadeIn 2s;
+}
+.img-what{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 38%;
+    border-radius: 10px;
+    animation: FadeIn 3s;
+    opacity: .85;
+}
+.p-what2{
+    color:white;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: .85;
+    font-size: 1.2vw;
+    animation: FadeIn 4s;
+}
+@keyframes FadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .85;
+    }
 }
